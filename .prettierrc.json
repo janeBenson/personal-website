@@ -3,7 +3,7 @@
   "singleQuote": true,
   "semi": false,
   "tabWidth": 2,
-  "printWidth": 80,
+  "printWidth": 170,
   "arrowParens": "always",
   "endOfLine": "auto"
 }

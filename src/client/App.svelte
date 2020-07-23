@@ -2,19 +2,15 @@
   import { Router, Link, Route, links } from 'svelte-routing'
 
   import Creatures from './routes/Creatures.svelte'
+  import Footer from './components/Footer.svelte'
   import Home from './routes/Home.svelte'
   import NavBar from './components/NavBar.svelte'
-  import PageHeader from './components/PageHeader.svelte'
+  import Portfolio from './routes/Portfolio.svelte'
+  import Resume from './routes/Resume.svelte'
 </script>
 
 <style>
-  :global(body) {
-    color: #717070;
-  }
 
-  :global(a:hover, a:visited, a:link, a:active) {
-    text-decoration: none;
-  }
 </style>
 
 <svelte:head>
@@ -30,26 +26,37 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
     crossorigin="anonymous" />
 
+  <!-- Google Font -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Montserrat"
+    rel="stylesheet" />
+
   <title>Quotes</title>
 
 </svelte:head>
 
 <div use:links>
   <Router>
-    <div class="container">
 
-      <PageHeader />
+    <NavBar />
 
-      <NavBar />
+    <Route path="/">
+      <Home />
+    </Route>
 
-      <Route path="/">
-        <Home />
-      </Route>
+    <Route path="resume">
+      <Resume />
+    </Route>
 
-      <Route path="creatures">
-        <Creatures />
-      </Route>
+    <Route path="portfolio">
+      <Portfolio />
+    </Route>
 
-    </div>
+    <Route path="creatures">
+      <Creatures />
+    </Route>
+
+    <Footer />
+
   </Router>
 </div>
