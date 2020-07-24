@@ -14,6 +14,9 @@
 </style>
 
 <svelte:head>
+
+  <link rel="icon" href="/imgs/rabbit.png" />
+
   <!-- Font Awesome -->
   <link
     rel="stylesheet"
@@ -31,7 +34,7 @@
     href="https://fonts.googleapis.com/css?family=Montserrat"
     rel="stylesheet" />
 
-  <title>Quotes</title>
+  <title>Jane Benson</title>
 
 </svelte:head>
 
