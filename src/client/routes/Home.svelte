@@ -1,5 +1,5 @@
 <script>
-
+  import { link } from 'svelte-routing'
 </script>
 
 <style>
@@ -87,12 +87,19 @@
   <h3>Portfolio</h3>
   <div class="row">
     <div class="col-md-4 .col-sm-">
-      <p>Quote Generator</p>
-      <img src="/imgs/quote.jpg" class="rounded img-fluid" alt="Image" />
+      <p>Random Image Generator</p>
+      <a href="/portfolio/random-image-generator" use:link>
+        <img
+          src="/imgs/random-images.jpg"
+          class="rounded img-fluid"
+          alt="Image" />
+      </a>
     </div>
     <div class="col-md-4 .col-sm-">
       <p>To Do List</p>
-      <img src="/imgs/to-do-list.jpg" class="rounded img-fluid" alt="Image" />
+      <a href="/resume">
+        <img src="/imgs/to-do-list.jpg" class="rounded img-fluid" alt="Image" />
+      </a>
     </div>
     <div class="col-md-4 .col-sm-">
       <p>Websockets</p>

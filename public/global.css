@@ -4,10 +4,16 @@ body {
   color: #f5f6f7;
 }
 
-p {
+p,
+.f16 {
   font-size: 16px;
 }
 
 a:hover {
   color: #ff4e50 !important;
+}
+
+.page-content {
+  padding: 15px;
+  min-height: 100vh;
 }

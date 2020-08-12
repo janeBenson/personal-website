@@ -1,12 +1,16 @@
 <script>
   import { Router, Link, Route, links } from 'svelte-routing'
+  import { onMount } from 'svelte'
 
   import Creatures from './routes/Creatures.svelte'
   import Footer from './components/Footer.svelte'
   import Home from './routes/Home.svelte'
   import NavBar from './components/NavBar.svelte'
   import Portfolio from './routes/Portfolio.svelte'
+  import RandomImageGenerator from './routes/portfolio/RandomImageGenerator.svelte'
   import Resume from './routes/Resume.svelte'
+
+  import scrollToTop from './utils/scrollToTop.js'
 </script>
 
 <style>
@@ -57,6 +61,11 @@
 
     <Route path="creatures">
       <Creatures />
+    </Route>
+
+    <!-- Portfolio items -->
+    <Route path="/portfolio/random-image-generator">
+      <RandomImageGenerator />
     </Route>
 
     <Footer />

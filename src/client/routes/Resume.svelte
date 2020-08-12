@@ -27,7 +27,7 @@
   }
 </style>
 
-<div class="resume">
+<div class="resume page-content">
   <h3>Education</h3>
   <hr />
   <p>
